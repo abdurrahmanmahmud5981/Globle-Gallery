@@ -1,8 +1,15 @@
-
+import Countries from "../components/Countries";
+import Navber from "../components/Navber";
 
 const App = () => {
   return (
-    <div className="">App</div>
+    <>
+    <div className="px-4">
+      <Navber/>
+      <Countries/>
+      
+    </div>
+    </>
   )
 }
 
