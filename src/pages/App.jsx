@@ -1,13 +1,14 @@
 import Countries from "../components/Countries";
-import Navber from "../components/Navber";
+import Footer from "../components/Footer";
 
 const App = () => {
   return (
     <>
+    <div>
     <div className="px-4">
-      <Navber/>
       <Countries/>
-      
+    </div>
+    <Footer/>
     </div>
     </>
   )

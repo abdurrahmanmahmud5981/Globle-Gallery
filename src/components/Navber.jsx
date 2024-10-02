@@ -1,4 +1,5 @@
-const Navber = () => {
+/* eslint-disable react/prop-types */
+const Navber = ({search,handleSearch}) => {
   return (
     <>
       <div className=" shadow-lg bg-secondary max-w-screen-xl mx-auto ">
@@ -10,18 +11,16 @@ const Navber = () => {
             <div className="form-control">
               <input
                 type="text"
+                value={search}
+                onChange={handleSearch}
                 placeholder="Search"
                 className="input input-bordered w-24 sm:w-auto bg-transparent text-primary placeholder:text-primary"
               />
             </div>
             <div className="dropdown dropdown-end">
-              <div
-                tabIndex={0}
-                role="button"
-                className=""
-              >
+              <div tabIndex={0} role="button" className="">
                 <button className="btn bg-primary text-secondary hover:bg-secondary hover:text-primary">
-                 Sort By :
+                  Sort By :
                 </button>
               </div>
               <ul
@@ -30,8 +29,7 @@ const Navber = () => {
               >
                 <li className="border rounded-lg">
                   <a className="justify-between">
-                    Country A to Z 
-                    <span className="badge">New</span>
+                    Country A to Z<span className="badge">New</span>
                   </a>
                 </li>
                 <li className="border rounded-lg">

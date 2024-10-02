@@ -4,4 +4,8 @@
 
 button:disabled{
     background-color: red !important;
+    color: white !important;
+    font-weight: 700;    
+    cursor: not-allowed !important;
+    pointer-events:all !important;
 }
