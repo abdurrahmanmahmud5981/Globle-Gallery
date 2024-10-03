@@ -28,5 +28,9 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.1"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/abdurrahmanmahmud5981/Globle-Gallery.git",
+  "author": "Abdur Rahman Mahmud <ar7543078@gmail.com>",
+  "license": "MIT"
 }
